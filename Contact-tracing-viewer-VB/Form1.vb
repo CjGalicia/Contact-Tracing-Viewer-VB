@@ -21,4 +21,8 @@ Public Class Form1
         End If
 
     End Sub
+
+    Private Sub resetBtn_Click(sender As Object, e As EventArgs) Handles resetBtn.Click
+        displayBox.Clear()
+    End Sub
 End Class
