@@ -1,0 +1,23 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v5.0",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v5.0": {
+      "Contact-tracing-viewer-VB/1.0.0": {
+        "runtime": {
+          "Contact-tracing-viewer-VB.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "Contact-tracing-viewer-VB/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    }
+  }
+}

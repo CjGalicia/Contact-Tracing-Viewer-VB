@@ -24,10 +24,10 @@ Partial Class Form1
     Private Sub InitializeComponent()
         Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(Form1))
         Me.titleLbl = New System.Windows.Forms.Label()
-        Me.TextBox1 = New System.Windows.Forms.TextBox()
-        Me.Button1 = New System.Windows.Forms.Button()
-        Me.Import = New System.Windows.Forms.Button()
-        Me.Button2 = New System.Windows.Forms.Button()
+        Me.readBtn = New System.Windows.Forms.Button()
+        Me.importBtn = New System.Windows.Forms.Button()
+        Me.resetBtn = New System.Windows.Forms.Button()
+        Me.displayBox = New System.Windows.Forms.RichTextBox()
         Me.SuspendLayout()
         '
         'titleLbl
@@ -41,39 +41,43 @@ Partial Class Form1
         Me.titleLbl.TabIndex = 0
         Me.titleLbl.Text = "Quezon City Contact Tracing Viewer"
         '
-        'TextBox1
+        'readBtn
         '
-        Me.TextBox1.Location = New System.Drawing.Point(196, 97)
-        Me.TextBox1.Name = "TextBox1"
-        Me.TextBox1.Size = New System.Drawing.Size(100, 21)
-        Me.TextBox1.TabIndex = 1
+        Me.readBtn.BackColor = System.Drawing.Color.PowderBlue
+        Me.readBtn.Location = New System.Drawing.Point(29, 51)
+        Me.readBtn.Name = "readBtn"
+        Me.readBtn.Size = New System.Drawing.Size(75, 23)
+        Me.readBtn.TabIndex = 2
+        Me.readBtn.Text = "Read"
+        Me.readBtn.UseVisualStyleBackColor = False
         '
-        'Button1
+        'importBtn
         '
-        Me.Button1.Location = New System.Drawing.Point(29, 95)
-        Me.Button1.Name = "Button1"
-        Me.Button1.Size = New System.Drawing.Size(75, 23)
-        Me.Button1.TabIndex = 2
-        Me.Button1.Text = "Read"
-        Me.Button1.UseVisualStyleBackColor = True
+        Me.importBtn.BackColor = System.Drawing.Color.PowderBlue
+        Me.importBtn.Location = New System.Drawing.Point(29, 80)
+        Me.importBtn.Name = "importBtn"
+        Me.importBtn.Size = New System.Drawing.Size(75, 23)
+        Me.importBtn.TabIndex = 3
+        Me.importBtn.Text = "Import"
+        Me.importBtn.UseVisualStyleBackColor = False
         '
-        'Import
+        'resetBtn
         '
-        Me.Import.Location = New System.Drawing.Point(29, 124)
-        Me.Import.Name = "Import"
-        Me.Import.Size = New System.Drawing.Size(75, 23)
-        Me.Import.TabIndex = 3
-        Me.Import.Text = "Import"
-        Me.Import.UseVisualStyleBackColor = True
+        Me.resetBtn.BackColor = System.Drawing.Color.PowderBlue
+        Me.resetBtn.Location = New System.Drawing.Point(29, 241)
+        Me.resetBtn.Name = "resetBtn"
+        Me.resetBtn.Size = New System.Drawing.Size(75, 23)
+        Me.resetBtn.TabIndex = 4
+        Me.resetBtn.Text = "Reset"
+        Me.resetBtn.UseVisualStyleBackColor = False
         '
-        'Button2
+        'displayBox
         '
-        Me.Button2.Location = New System.Drawing.Point(29, 153)
-        Me.Button2.Name = "Button2"
-        Me.Button2.Size = New System.Drawing.Size(75, 23)
-        Me.Button2.TabIndex = 4
-        Me.Button2.Text = "Reset"
-        Me.Button2.UseVisualStyleBackColor = True
+        Me.displayBox.Location = New System.Drawing.Point(141, 52)
+        Me.displayBox.Name = "displayBox"
+        Me.displayBox.Size = New System.Drawing.Size(256, 233)
+        Me.displayBox.TabIndex = 5
+        Me.displayBox.Text = ""
         '
         'Form1
         '
@@ -81,10 +85,10 @@ Partial Class Form1
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackColor = System.Drawing.SystemColors.MenuHighlight
         Me.ClientSize = New System.Drawing.Size(409, 544)
-        Me.Controls.Add(Me.Button2)
-        Me.Controls.Add(Me.Import)
-        Me.Controls.Add(Me.Button1)
-        Me.Controls.Add(Me.TextBox1)
+        Me.Controls.Add(Me.displayBox)
+        Me.Controls.Add(Me.resetBtn)
+        Me.Controls.Add(Me.importBtn)
+        Me.Controls.Add(Me.readBtn)
         Me.Controls.Add(Me.titleLbl)
         Me.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point)
         Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle
@@ -97,8 +101,8 @@ Partial Class Form1
     End Sub
 
     Friend WithEvents titleLbl As Label
-    Friend WithEvents TextBox1 As TextBox
-    Friend WithEvents Button1 As Button
-    Friend WithEvents Import As Button
-    Friend WithEvents Button2 As Button
+    Friend WithEvents readBtn As Button
+    Friend WithEvents importBtn As Button
+    Friend WithEvents resetBtn As Button
+    Friend WithEvents displayBox As RichTextBox
 End Class
