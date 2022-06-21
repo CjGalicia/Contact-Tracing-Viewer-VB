@@ -6,5 +6,19 @@ Public Class Form1
         Dim stringReader As String
         stringReader = fileReader.ReadLine()
         displayBox.Text = fileReader.ReadToEnd
+        fileReader.Close()
+    End Sub
+
+    Private Sub importBtn_Click(sender As Object, e As EventArgs) Handles importBtn.Click
+        Dim formReader As StreamReader
+        Dim fileOpener As DialogResult
+        fileOpener = OpenFileDialog1.ShowDialog
+
+        If fileOpener Then
+            formReader = New StreamReader(OpenFileDialog1.FileName)
+            displayBox.Text = formReader.ReadToEnd
+            formReader.Close()
+        End If
+
     End Sub
 End Class

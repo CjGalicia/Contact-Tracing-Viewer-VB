@@ -28,6 +28,7 @@ Partial Class Form1
         Me.importBtn = New System.Windows.Forms.Button()
         Me.resetBtn = New System.Windows.Forms.Button()
         Me.displayBox = New System.Windows.Forms.RichTextBox()
+        Me.OpenFileDialog1 = New System.Windows.Forms.OpenFileDialog()
         Me.SuspendLayout()
         '
         'titleLbl
@@ -35,7 +36,7 @@ Partial Class Form1
         Me.titleLbl.AutoSize = True
         Me.titleLbl.Font = New System.Drawing.Font("Microsoft Sans Serif", 15.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point)
         Me.titleLbl.ForeColor = System.Drawing.Color.WhiteSmoke
-        Me.titleLbl.Location = New System.Drawing.Point(12, 9)
+        Me.titleLbl.Location = New System.Drawing.Point(119, 9)
         Me.titleLbl.Name = "titleLbl"
         Me.titleLbl.Size = New System.Drawing.Size(393, 25)
         Me.titleLbl.TabIndex = 0
@@ -64,7 +65,7 @@ Partial Class Form1
         'resetBtn
         '
         Me.resetBtn.BackColor = System.Drawing.Color.PowderBlue
-        Me.resetBtn.Location = New System.Drawing.Point(29, 241)
+        Me.resetBtn.Location = New System.Drawing.Point(29, 208)
         Me.resetBtn.Name = "resetBtn"
         Me.resetBtn.Size = New System.Drawing.Size(75, 23)
         Me.resetBtn.TabIndex = 4
@@ -73,18 +74,22 @@ Partial Class Form1
         '
         'displayBox
         '
-        Me.displayBox.Location = New System.Drawing.Point(141, 52)
+        Me.displayBox.Location = New System.Drawing.Point(139, 52)
         Me.displayBox.Name = "displayBox"
-        Me.displayBox.Size = New System.Drawing.Size(256, 233)
+        Me.displayBox.Size = New System.Drawing.Size(435, 190)
         Me.displayBox.TabIndex = 5
         Me.displayBox.Text = ""
+        '
+        'OpenFileDialog1
+        '
+        Me.OpenFileDialog1.FileName = "OpenFileDialog1"
         '
         'Form1
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(7.0!, 15.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackColor = System.Drawing.SystemColors.MenuHighlight
-        Me.ClientSize = New System.Drawing.Size(409, 544)
+        Me.ClientSize = New System.Drawing.Size(615, 258)
         Me.Controls.Add(Me.displayBox)
         Me.Controls.Add(Me.resetBtn)
         Me.Controls.Add(Me.importBtn)
@@ -105,4 +110,5 @@ Partial Class Form1
     Friend WithEvents importBtn As Button
     Friend WithEvents resetBtn As Button
     Friend WithEvents displayBox As RichTextBox
+    Friend WithEvents OpenFileDialog1 As OpenFileDialog
 End Class
